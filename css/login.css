@@ -1,0 +1,114 @@
+/* body */
+body {
+    color: #444;
+    background: #e8e8e8 url(../img/svg/background.svg) no-repeat 48vw;
+    background-size: 50%;
+}
+
+@media (max-width: 1052px) {
+    body {
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+@media (max-width: 850px) {
+    body {
+        background-size: 0;
+    }
+}
+
+/* form element container */
+.login-form-wrapper {
+    width: 96%;
+    max-width: 900px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media (max-width: 1052px) {
+    .login-form-wrapper {
+        justify-content: center;
+    }
+}
+
+/* form element */
+.login-form {
+    width: 50%;
+    padding: 20px 32px 32px 32px;
+
+    border: 1px solid #e2e2e4;
+    border-radius: 8px;
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1052px) {
+    .login-form {
+        width: 400px;
+        max-width: 85%; 
+    }
+}
+
+/* form group elements */
+.form-group {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+/* label */
+.login-form label {
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+/* email, password and button */
+.login-form input,
+.login-form button {
+    padding: 13px;
+    padding-right: 45px;
+    border-radius: 8px;
+
+    font-size: 1.1em;
+}
+
+/* email and password */
+.login-form input {
+    position: relative;
+    background-color: #f2f2f2;
+}
+
+/* email */
+.login-form input#email {
+    background: #e8e8e8 url('../img/svg/envelope.svg') no-repeat 96%;
+    background-size: 18px;
+}
+
+/* password */
+.login-form input#password {
+    background: #e8e8e8 url('../img/svg/key.svg') no-repeat 96%;
+    background-size: 18px;
+}
+
+/* button */
+.login-form button {
+    color: #fff;
+    background-color: #ff4f5b;
+
+    margin-top: 9px;
+
+    transition: transform .4s ease-in-out
+}
+
+.login-form button:hover {
+    transform: scale3d(1.02);
+    transition: transform .4s ease-in-out
+}
