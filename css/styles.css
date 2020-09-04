@@ -39,6 +39,27 @@ body {
   display: flex;
   flex-direction: column;
 }
+.login-form .login-header-form {
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-form h2 {
+  color: #BA9FCC;
+  font-size: 32px;
+}
+.login-form a {
+  color: #25aaf6;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+.login-form a:hover {
+  border-bottom-color: initial;
+  transition: all 0.5s ease-in-out;
+}
 .login-form button {
   color: #fff;
   background-color: #ff4f5b;
@@ -46,6 +67,8 @@ body {
   padding-right: 45px;
   border-radius: 4px;
   font-size: 1.15em;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
   margin-top: 9px;
   transition: transform 0.4s ease-in-out;
 }
@@ -69,13 +92,18 @@ body {
   border: 1px solid #dfdfdf;
   border-radius: 4px;
   font-size: 1.1em;
+  font-family: "Lato", sans-serif;
   position: relative;
   background-size: 18px !important;
+}
+.form-group input#name {
+  background: #F5F5F5 url("../img/svg/user.svg") no-repeat 96%;
 }
 .form-group input#email {
   background: #F5F5F5 url("../img/svg/envelope.svg") no-repeat 96%;
 }
-.form-group input#password {
+.form-group input#password,
+.form-group input#password-check {
   background: #F5F5F5 url("../img/svg/key.svg") no-repeat 96%;
 }
 

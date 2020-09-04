@@ -56,6 +56,33 @@ body {
     display: flex;
     flex-direction: column;
 
+    .login-header-form {
+        margin-bottom: 18px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h2 {
+        color: #BA9FCC;
+        font-size: 32px;
+    }
+
+    a {
+        color: #25aaf6;
+        font-weight: bold;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+
+        transition: all 0.5s ease-in-out;
+    }
+
+    a:hover {
+        border-bottom-color: initial;
+        transition: all 0.5s ease-in-out;
+    }
+
     button {
         color: $white-color;
         background-color: $brand-color;
@@ -65,6 +92,8 @@ body {
         border-radius: 4px;
 
         font-size: 1.15em;
+        font-family: $font;
+        font-weight: bold;
     
         margin-top: 9px;
     
@@ -94,18 +123,25 @@ body {
         border-radius: 4px;
 
         font-size: 1.1em;
+        font-family: $font;
 
         position: relative;
         background-size: 18px !important;
+    }
+
+    input#name {
+        background: $input-color url('../img/svg/user.svg') no-repeat 96%;
     }
 
     input#email {
         background: $input-color url('../img/svg/envelope.svg') no-repeat 96%;
     }
 
-    input#password {
+    input#password,
+    input#password-check {
         background: $input-color url('../img/svg/key.svg') no-repeat 96%;
     }
+
 }
 
 /* login screen mobile devices style */
