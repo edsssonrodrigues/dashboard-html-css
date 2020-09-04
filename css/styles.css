@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 /* css reset */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -20,7 +20,8 @@ body {
   background-size: 50%;
 }
 
-.login-form-wrapper {
+.login-form-wrapper,
+.register-form-wrapper {
   width: 96%;
   max-width: 900px;
   height: 100%;
@@ -30,7 +31,8 @@ body {
   align-items: center;
 }
 
-.login-form {
+.login-form,
+.register-form {
   width: 50%;
   padding: 20px 32px 32px 32px;
   border: 1px solid #dfdfdf;
@@ -39,28 +41,35 @@ body {
   display: flex;
   flex-direction: column;
 }
-.login-form .login-header-form {
+.login-form .login-header-form,
+.login-form .register-header-form,
+.register-form .login-header-form,
+.register-form .register-header-form {
   margin-bottom: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.login-form h2 {
+.login-form h2,
+.register-form h2 {
   color: #BA9FCC;
   font-size: 32px;
 }
-.login-form a {
+.login-form a,
+.register-form a {
   color: #25aaf6;
   font-weight: bold;
   text-decoration: none;
   border-bottom: 2px solid transparent;
   transition: all 0.5s ease-in-out;
 }
-.login-form a:hover {
+.login-form a:hover,
+.register-form a:hover {
   border-bottom-color: initial;
   transition: all 0.5s ease-in-out;
 }
-.login-form button {
+.login-form button,
+.register-form button {
   color: #fff;
   background-color: #ff4f5b;
   padding: 13px;
@@ -72,7 +81,8 @@ body {
   margin-top: 9px;
   transition: transform 0.4s ease-in-out;
 }
-.login-form button:hover {
+.login-form button:hover,
+.register-form button:hover {
   transform: scale3d(1.02);
   transition: transform 0.4s ease-in-out;
 }
@@ -114,11 +124,13 @@ body {
     background-size: contain;
   }
 
-  .login-form-wrapper {
+  .login-form-wrapper,
+.register-form-wrapper {
     justify-content: center;
   }
 
-  .login-form {
+  .login-form,
+.register-form {
     width: 400px;
     max-width: 85%;
   }

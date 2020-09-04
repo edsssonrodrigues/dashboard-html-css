@@ -1,28 +1,7 @@
+@import 'variables';
+@import 'reset';
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-
-// fonts
-$font: 'Lato', sans-serif;
-
-// colors
-$text-color: #555;
-$primary-color: #f2f2f4;
-$brand-color: #ff4f5b;
-$white-color: #fff;
-$input-color: #F5F5F5;
-$border-color: #dfdfdf;
-
-/* css reset */
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    outline: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100vh;
-}
 
 /* login screen style */
 body {
@@ -33,7 +12,8 @@ body {
     background-size: 50%;
 }
 
-.login-form-wrapper {
+.login-form-wrapper,
+.register-form-wrapper {
     width: 96%;
     max-width: 900px;
     height: 100%;
@@ -44,7 +24,8 @@ body {
     align-items: center;
 }
 
-.login-form {
+.login-form,
+.register-form {
     width: 50%;
     padding: 20px 32px 32px 32px;
 
@@ -56,7 +37,8 @@ body {
     display: flex;
     flex-direction: column;
 
-    .login-header-form {
+    .login-header-form,
+    .register-header-form {
         margin-bottom: 18px;
 
         display: flex;
@@ -152,11 +134,13 @@ body {
         background-size: contain;
     }
 
-    .login-form-wrapper {
+    .login-form-wrapper,
+    .register-form-wrapper {
         justify-content: center;
     }
 
-    .login-form {
+    .login-form,
+    .register-form {
         width: 400px;
         max-width: 85%; 
     }
