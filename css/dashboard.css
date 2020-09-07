@@ -1,0 +1,92 @@
+/* css reset */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  color: #555;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f2f4;
+}
+
+a {
+  color: #25aaf6;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.flex-container .sidebar {
+  width: 200px;
+  height: 100%;
+  background-color: #1A2E35;
+}
+.flex-container .sidebar .sidebar-title {
+  height: 50px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #ff4551;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-container .sidebar .sidebar-menu {
+  list-style: none;
+}
+.flex-container .sidebar .sidebar-menu li {
+  padding: 10px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  transition: all 0.4s ease-out;
+}
+.flex-container .sidebar .sidebar-menu li:hover {
+  background-color: #375A64;
+  border-left-color: #25aaf6;
+  border-right-color: #25aaf6;
+  transition: all 0.4s ease-out;
+}
+.flex-container .sidebar .sidebar-menu a {
+  color: #fff;
+  font-size: 13px;
+}
+.flex-container .sidebar .sidebar-menu svg {
+  color: #25aaf6;
+}
+.flex-container .content {
+  width: calc(100% - 200px);
+  height: 100%;
+}
+.flex-container .content header {
+  padding: 0 16px;
+  height: 50px;
+  font-size: 14px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-container .content header a {
+  font-weight: bold;
+}
+.flex-container .content header a svg {
+  color: #ba9fcc;
+}
+
+/*# sourceMappingURL=dashboard.css.map */

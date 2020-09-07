@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
 </head>
-<body>
 
+<body>
+    <div class="flex-container">
+        <aside class="sidebar">
+            <div class="sidebar-title">
+                Logomarca
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="users.html"><i class="fas fa-users"></i> Usuários</a></li>
+                <li><a href="permissions.html"><i class="fas fa-shield-alt"></i> Permissões</a></li>
+                <li><a href="posts.html"><i class="fas fa-share-square"></i> Postagens</a></li>
+            </ul>
+        </aside>
+
+        <div class="content">
+            <header>
+                <a href="dashboard.html">
+                    <i class="fas fa-home"></i> Dashboard
+                </a>
+                <a href="index.html">
+                    <i class="fas fa-sign-out-alt"></i> Sair
+                </a>
+            </header>
+            <section class="main-content">
+
+            </section>
+        </div>
+    </div>
+    <script src="assets/fontawesome/js/all.min.js"></script>
 </body>
+
 </html>

@@ -1,19 +1,16 @@
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
 @import 'variables';
 @import 'reset';
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-
 /* login screen style */
 body {
-    color: $text-color;
-    font-family: 'Lato', sans-serif;
-
     background: $primary-color url(../img/svg/background.svg) no-repeat 48vw;
     background-size: 50%;
 }
 
-.login-form-wrapper,
-.register-form-wrapper {
+.form-wrapper {
     width: 96%;
     max-width: 900px;
     height: 100%;
@@ -24,9 +21,8 @@ body {
     align-items: center;
 }
 
-.login-form,
-.register-form {
-    width: 50%;
+.form-auth {
+    width: 45%;
     padding: 20px 32px 32px 32px;
 
     border: 1px solid $border-color;
@@ -37,8 +33,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    .login-header-form,
-    .register-header-form {
+    .form-header {
         margin-bottom: 18px;
 
         display: flex;
@@ -48,11 +43,11 @@ body {
 
     h2 {
         color: #BA9FCC;
-        font-size: 32px;
+        font-size: 28px;
     }
 
     a {
-        color: #25aaf6;
+        color: $links-color;
         font-weight: bold;
         text-decoration: none;
         border-bottom: 2px solid transparent;
@@ -69,8 +64,7 @@ body {
         color: $white-color;
         background-color: $brand-color;
 
-        padding: 13px;
-        padding-right: 45px;
+        padding: 10px;
         border-radius: 4px;
 
         font-size: 1.15em;
@@ -99,7 +93,7 @@ body {
     }
 
     input {
-        padding: 13px;
+        padding: 10px;
         padding-right: 45px;
         border: 1px solid $border-color;
         border-radius: 4px;
@@ -134,13 +128,11 @@ body {
         background-size: contain;
     }
 
-    .login-form-wrapper,
-    .register-form-wrapper {
+    .form-wrapper {
         justify-content: center;
     }
 
-    .login-form,
-    .register-form {
+    .form-auth {
         width: 400px;
         max-width: 85%; 
     }
